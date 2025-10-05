@@ -1,0 +1,44 @@
+# Ignore common compiled object and executable files
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+
+# Ignore executables without extension (common on Linux/macOS)
+# Ignore any file that has no extension but has an executable permission
+# Note: Git doesn’t detect “executable permission” in .gitignore,
+# so we use a pattern-based approach:
+# (ignore any file in root that doesn't have an extension)
+# BUT keep .cpp, .h, and folders
+
+# Ignore all files in root without an extension
+# (use carefully if you don't have extensionless source files)
+* 
+!*/
+!*.cpp
+!*.h
+!.gitignore
+!README.md
+
+# Ignore build and debug folders
+/build/
+/bin/
+/Debug/
+/Release/
+
+# Ignore temporary/editor/system files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+.DS_Store
+Thumbs.db
+
+# Ignore IDE config folders
+.vscode/
+.idea/
+*.code-workspace
