@@ -25,6 +25,7 @@ vector<int> nextPerm(vector<int>&arr){
 //find longest prefix match by finding a break point by traversing from n-2 to 0 until we get a[i]<a[i+1]
 //then traverse from n-1 to i+1 to find smallest element greater than a[i]
 //now i want to place remaining elements in sorted order
+//TC-> O(3n), SC-> O(1)
 
 vector<int> nextPermOptimal(vector<int>&arr){
     int n=arr.size();
