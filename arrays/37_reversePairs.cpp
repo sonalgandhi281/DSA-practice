@@ -26,6 +26,8 @@ int reversePairs(vector<int>&arr){
 
 //TC-> O(2n*logn), SC-> O(n)
 
+//also, note that we are altering original array which is not a good practice in interviews, so, mention it to interviewer and make a copy of the array and solve if they dont want u to distort it.
+
 void merge(vector<int>&arr, int low, int mid, int high){
     int left=low, right=mid+1;
     vector<int> temp;
