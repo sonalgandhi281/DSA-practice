@@ -18,8 +18,17 @@ bool checkIthBit(int n, int i){
     return bin[i]=='1';
 }
 
-//Optimal: left shift 1 by i places, this will give 1 at ith place and 0 at all other places. do AND operation with number, if ith place is 1, it will give a no. greater than 0.
+//Optimal: left shift 1 by i places, this will give 1 at ith place and 0 at all other places. do AND operation with number, if ith place is 1, it will give a no. greater than 0, otherwise gives 0.
+//tc-> O(1), sc-> O(1)
 
 bool checkIthBitOptimal(int n, int i){
     return (n & (1<<i)) != 0;
+}
+
+int main(){
+    int num=5;
+    int bitInd=2;
+    cout<<checkIthBit(num,bitInd)<<endl;
+    cout<<checkIthBitOptimal(num,bitInd)<<endl;
+    return 0;
 }
