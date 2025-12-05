@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+//not based on monotonic stack
+
 //Given an array of non-negative integers representation elevation of ground. Your task is to find the water that can be trapped after rain .
 
 //Brute: for every index(building), water trapped would be min of max heights on left and right - height of the index
