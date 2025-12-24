@@ -74,6 +74,7 @@ Node* reverseLLOptimal(Node* head){
 }
 
 //Recursive approach
+//tc-> O(n), sc-> O(n) recursive stack space
 Node* reverseLLRec(Node* head){
     if(head==nullptr || head->next==nullptr) return head;
     Node* newHead = reverseLLRec(head->next);
